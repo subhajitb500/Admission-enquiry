@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry Form - Subhajit Bakshi</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0078d7, #6fb1fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #0078d7;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #0078d7;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .checkbox input {
+            margin-right: 10px;
+        }
+        .btn {
+            background: #0078d7;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #005cbf;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subhajit Bakshi's Tuition Classes</h1>
+    </div>
+    <form>
+        <h2>Admission Enquiry Form</h2>
+        
+        <!-- Full Name -->
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+        <!-- Phone Number -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+        <!-- Address -->
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+        
+        <!-- Class Selection -->
+        <label for="class">Class</label>
+        <select id="class" name="class" required>
+            <option value="">Select Class</option>
+            <option value="IX">IX</option>
+            <option value="X">X</option>
+            <option value="XI">XI</option>
+            <option value="XII">XII</option>
+        </select>
+        
+        <!-- Special JEE Class -->
+        <div class="checkbox">
+            <input type="checkbox" id="jee" name="jee">
+            <label for="jee">Enroll for Special JEE Class (Available for XI & XII)</label>
+        </div>
+        
+        <!-- School Name -->
+        <label for="school">School Name</label>
+        <input type="text" id="school" name="school" placeholder="Enter your school name" required>
+        
+        <!-- Board Selection -->
+        <label for="board">Board</label>
+        <select id="board" name="board" required>
+            <option value="">Select Board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="ISC">ISC</option>
+        </select>
+        
+        <!-- Submit Button -->
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</body>
+</html>
